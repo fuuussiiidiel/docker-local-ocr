@@ -20,6 +20,9 @@ docker-compose up --build
 Die API ist danach erreichbar unter:
 http://localhost:8089/ocr
 
+## 📁 Verzeichnisse
+data/ – gemountetes Volume für persistente Ablage (optional nutzbar)
+
 ## 📤 Beispiel-Request (mit curl)
 ```bash
 curl -F "file=@scan.pdf" -F "force_ocr=true" http://localhost:8089/ocr --output result.pdf
