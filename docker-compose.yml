@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  ocr-api:
+    build: .
+    container_name: ocr-http
+    ports:
+      - "8089:8089"
