@@ -32,10 +32,15 @@ curl -F "file=@scan.pdf" -F "force_ocr=true" http://localhost:8089/ocr --output 
 In einem HTTP Request Node in n8n:
 
 Methode: POST
+
 URL: http://localhost:8089/ocr
+
 Body Content Type: multipart/form-data
+
 Form Fields:
+
 file → Binärdatei (PDF)
+
 force_ocr → true oder false (optional)
 
 Antwort:
