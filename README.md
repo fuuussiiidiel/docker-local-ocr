@@ -20,9 +20,6 @@ docker-compose up --build
 Die API ist danach erreichbar unter:
 http://localhost:8089/ocr
 
-## 📁 Verzeichnisse
-data/ – gemountetes Volume für persistente Ablage (optional nutzbar)
-
 ## 📤 Beispiel-Request (mit curl)
 ```bash
 curl -F "file=@scan.pdf" -F "force_ocr=true" http://localhost:8089/ocr --output result.pdf
@@ -45,3 +42,9 @@ force_ocr → true oder false (optional)
 
 Antwort:
 Die verarbeitete PDF-Datei kommt direkt im HTTP-Response zurück und kann in n8n weiterverwendet werden.
+
+## 🪵 Logs anzeigen
+Wenn du sehen willst, was im Container passiert (z. B. Fehler bei der OCR-Verarbeitung), kannst du dir die Logs live anzeigen lassen:
+```bash
+docker-compose logs -f ocr-api
+```
