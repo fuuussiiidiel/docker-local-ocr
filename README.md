@@ -46,5 +46,5 @@ Die verarbeitete PDF-Datei kommt direkt im HTTP-Response zurück und kann in n8n
 ## 🪵 Logs anzeigen
 Wenn du sehen willst, was im Container passiert (z. B. Fehler bei der OCR-Verarbeitung), kannst du dir die Logs live anzeigen lassen:
 ```bash
-docker-compose logs -f ocr-api
+docker-compose logs -f ocr-http
 ```
