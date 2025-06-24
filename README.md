@@ -14,14 +14,14 @@ Ideal für lokale Verarbeitung ohne Cloud oder Drittanbieter.
 ## 🔧 Starten
 
 ```bash
-docker-compose up --build
+docker-compose up --build```
 
 Die API ist danach erreichbar unter:
 http://localhost:8089/ocr
 
 ## 📤 Beispiel-Request (mit curl)
 ```bash
-curl -F "file=@scan.pdf" -F "force_ocr=true" http://localhost:8089/ocr --output result.pdf
+curl -F "file=@scan.pdf" -F "force_ocr=true" http://localhost:8089/ocr --output result.pdf```
 
 ## 🔁 Nutzung mit n8n
 In einem HTTP Request Node in n8n:
